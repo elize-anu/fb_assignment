@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %} Login {% endblock %}
+{% block body %}
+    <div class="container">
+        <div class="card-panel hoverable">
+            <div class="row ">
+                <div class="col s5">
+                    <h4>Login</h4>
+                    <form action="{% url 'login' %}" method="post" novalidate >
+                        {% csrf_token %}
+                        {{form.as_p}}
+                        <input type="submit" value="Login"/>
+                    </form>
+                    <ul>
+                        <li><a href="{% url 'social:begin' 'facebook' %}">Signin With Facebook</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
