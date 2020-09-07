@@ -131,8 +131,14 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-SOCIAL_AUTH_FACEBOOK_KEY	=	''	# Facebook App	ID
-SOCIAL_AUTH_FACEBOOK_SECRET	=	''	# Facebook App Secret
+# FACEBOOK_APP_ID=str('1215373728814808')
+# FACEBOOK_APP_SECRET=str('4caffa68ac190db279d711399568cc4e')
+
+SOCIAL_AUTH_FACEBOOK_KEY    =   '1215373728814808'  # Facebook App  ID anu api
+SOCIAL_AUTH_FACEBOOK_SECRET =   '4caffa68ac190db279d711399568cc4e'  # Facebook App Secret
+# SOCIAL_AUTH_FACEBOOK_KEY    =   '332973771233773'   # Facebook App  ID
+# SOCIAL_AUTH_FACEBOOK_SECRET =   '0c3e9b0b82f9121cccf7c5099687995f'  # Facebook App 
+
 
 SOCIAL_AUTH_FACEBOOK_SCOPE = ['email', 'user_link'] # add this
 SOCIAL_AUTH_FACEBOOK_PROFILE_EXTRA_PARAMS = {       # add this
@@ -145,4 +151,4 @@ SOCIAL_AUTH_FACEBOOK_EXTRA_DATA = [                 # add this
     ('link', 'profile_url'),
     ('posts', 'user_posts'),
 ]
-
+# token_user EAAFMtgP4iwoBALvL0ExNdE5kwImCTVMKMZAIVVU1uzOne03whZB60m8E202CXFxVw79SZBDxp4ofp9VUNEUD1uwQM3VylAKwcXJd9IAJQkSOA9trTKgqPzP8SADLclZCZA9ZAlZAihubGZBo6WneOaYC21Bvti1eoNGiWZBLPcj8tlG8JgPRv4194k2yWuFMFDsbM6u9PDn9Wk9XRYx7I7cVFlyLOyzOd91XTa4Jn8N37vdZBz0ynG82VmviFYRxqL0aAZD
